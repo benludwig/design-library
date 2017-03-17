@@ -1,0 +1,8 @@
+.DS_Store
+patternlab.json
+.sass-cache/*
+/sass-cache
+Thumbs.db
+.idea/
+node_modules
+public/*
