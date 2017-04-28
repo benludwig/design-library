@@ -1,0 +1,24 @@
+@font-face {
+    font-family: 'butlerbold';
+    src: url('../fonts/butler/butler_bold-webfont.woff2') format('woff2'),
+         url('../fonts/butler/butler_bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'butlerregular';
+    src: url('../fonts/butler/butler_regular-webfont.woff2') format('woff2'),
+         url('../fonts/butler/butler_regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+h1 {
+  font-family: 'butlerbold';
+  font-size: 5em;
+  line-height:1em;
+  }
