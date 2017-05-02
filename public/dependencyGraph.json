@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "timestamp": 1493345975753,
+  "timestamp": 1493689584714,
   "graph": {
     "options": {
       "directed": true,
@@ -16,6 +16,18 @@
       },
       {
         "v": "00-atoms/typography/headline.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "00-atoms/typography/paragraph.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "01-molecules/card.mustache",
         "value": {
           "compileState": "clean"
         }

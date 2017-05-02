@@ -1,24 +1,79 @@
 @font-face {
-    font-family: 'butlerbold';
-    src: url('../fonts/butler/butler_bold-webfont.woff2') format('woff2'),
-         url('../fonts/butler/butler_bold-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
+  font-family: 'GTAmerica-Bold';
+  src: url('../fonts/GTAmerica/GTAmerica-Bold.eot'), /* IE9 Compat Modes */
+       url('../fonts/GTAmerica/GTAmerica-Bold.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/GTAmerica/GTAmerica-Bold.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/GTAmerica/GTAmerica-Bold.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/GTAmerica/GTAmerica-Bold.svg') format('svg'); /* Legacy iOS */
 }
 
 @font-face {
-    font-family: 'butlerregular';
-    src: url('../fonts/butler/butler_regular-webfont.woff2') format('woff2'),
-         url('../fonts/butler/butler_regular-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'GTAmerica-CompressedBold';
+  src: url('../fonts/GTAmerica/GTAmerica-CompressedBold.eot'), /* IE9 Compat Modes */
+       url('../fonts/GTAmerica/GTAmerica-CompressedBold.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/GTAmerica/GTAmerica-CompressedBold.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/GTAmerica/GTAmerica-CompressedBold.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/GTAmerica/GTAmerica-CompressedBold.svg') format('svg'); /* Legacy iOS */
+}
 
+@font-face {
+  font-family: 'GTAmerica-CondensedBold';
+  src: url('../fonts/GTAmerica/GTAmerica-CondensedBold.eot'), /* IE9 Compat Modes */
+       url('../fonts/GTAmerica/GTAmerica-CondensedBold.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/GTAmerica/GTAmerica-CondensedBold.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/GTAmerica/GTAmerica-CondensedBold.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/GTAmerica/GTAmerica-CondensedBold.svg') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+  font-family: 'GTAmerica-Medium';
+  src: url('../fonts/GTAmerica/GTAmerica-Medium.eot'), /* IE9 Compat Modes */
+       url('../fonts/GTAmerica/GTAmerica-Medium.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/GTAmerica/GTAmerica-Medium.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/GTAmerica/GTAmerica-Medium.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/GTAmerica/GTAmerica-Medium.svg') format('svg'); /* Legacy iOS */
 }
 
 
 h1 {
-  font-family: 'butlerbold';
-  font-size: 5em;
+  font-family: 'GTAmerica-Bold';
+  font-size: 2em;
   line-height:1em;
+  letter-spacing: -0.03em;
   }
+
+p {
+	font-family: Georgia, serif;
+  font-style: normal;
+  font-weight: 400;
+  color: #000;
+  font-size: 16px;
+  line-height: 27px;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  letter-spacing: 0.1px;
+  margin: 0;
+  }
+
+  .card {
+     background-color: blue;
+     position: relative;
+     width: 100%;
+     padding-top: 90%; /* 16:9 Aspect Ratio */
+    }
+
+  .card-top {
+    position:  absolute;
+    top: 0;
+    width: 100%;
+    height: 50%;
+    background-color:#333333;
+    }
+
+  .card-bottom {
+    position:  absolute;
+    bottom: 0;
+    width: 100%;
+    height:50%;
+    background-color: #ececec;
+    }
