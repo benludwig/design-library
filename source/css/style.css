@@ -1,5 +1,11 @@
+/*Imports------------------------------
+-------------------------------------*/
+/*Colors-------------------------------
+-------------------------------------*/
+/*Font Files---------------------------
+-------------------------------------*/
 @font-face {
-  font-family: 'GTAmerica-Bold';
+  font-family: 'GTAmericaBold';
   src: url("../fonts/GTAmerica/GTAmerica-Bold.eot"), url("../fonts/GTAmerica/GTAmerica-Bold.woff2") format("woff2"), url("../fonts/GTAmerica/GTAmerica-Bold.woff") format("woff"), url("../fonts/GTAmerica/GTAmerica-Bold.ttf") format("truetype"), url("../fonts/GTAmerica/GTAmerica-Bold.svg") format("svg");
   /* Legacy iOS */ }
 
@@ -18,11 +24,44 @@
   src: url("../fonts/GTAmerica/GTAmerica-Medium.eot"), url("../fonts/GTAmerica/GTAmerica-Medium.woff2") format("woff2"), url("../fonts/GTAmerica/GTAmerica-Medium.woff") format("woff"), url("../fonts/GTAmerica/GTAmerica-Medium.ttf") format("truetype"), url("../fonts/GTAmerica/GTAmerica-Medium.svg") format("svg");
   /* Legacy iOS */ }
 
+/*Typography---------------------------
+ -------------------------------------*/
+/*Shapes-------------------------------
+ -------------------------------------*/
+/*Shadows------------------------------
+ -------------------------------------*/
+/*Buttons------------------------------
+ -------------------------------------*/
+/*Flexbox------------------------------
+-------------------------------------*/
 h1 {
-  font-family: 'GTAmerica-Bold';
-  font-size: 2em;
-  line-height: 1em;
-  letter-spacing: -0.03em; }
+  font-family: "GTAmericaBold", serif;
+  font-size: 32px;
+  color: #e84950; }
+
+button {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  display: inline-block;
+  margin-bottom: 0;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-image: none;
+  border: 1px solid #262d3f;
+  border-radius: 0px;
+  position: relative;
+  background-color: rgba(255, 255, 255, 0);
+  font-size: 13px;
+  padding: 8px 15px; }
 
 p {
   font-family: Georgia, serif;
@@ -56,3 +95,15 @@ p {
   width: 100%;
   height: 50%;
   background-color: #ececec; }
+
+/*Primary Nav--------------------------
+-------------------------------------*/
+.primary-nav {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }

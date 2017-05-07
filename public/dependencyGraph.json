@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "timestamp": 1493689584714,
+  "timestamp": 1494200309789,
   "graph": {
     "options": {
       "directed": true,
@@ -9,9 +9,23 @@
     },
     "nodes": [
       {
+        "v": "00-atoms/buttons/buttons.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
         "v": "00-atoms/colors/1-brand-colors.mustache",
         "value": {
           "compileState": "clean"
+        }
+      },
+      {
+        "v": "00-atoms/logo/logo.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/01-molecules-primary-nav-primary-nav/01-molecules-primary-nav-primary-nav.rendered.html",
+          "lineagePattern": "molecules-primary-nav"
         }
       },
       {
@@ -27,13 +41,13 @@
         }
       },
       {
-        "v": "01-molecules/card.mustache",
+        "v": "01-molecules/card/card.mustache",
         "value": {
           "compileState": "clean"
         }
       },
       {
-        "v": "01-molecules/primary-nav.mustache",
+        "v": "01-molecules/primary-nav/primary-nav.mustache",
         "value": {
           "compileState": "clean"
         }
@@ -51,6 +65,12 @@
         }
       }
     ],
-    "edges": []
+    "edges": [
+      {
+        "v": "01-molecules/primary-nav/primary-nav.mustache",
+        "w": "00-atoms/logo/logo.mustache",
+        "value": {}
+      }
+    ]
   }
 }
