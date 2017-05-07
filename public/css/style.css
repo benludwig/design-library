@@ -106,4 +106,7 @@ p {
   display: flex;
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
-  justify-content: space-between; }
+  justify-content: space-between;
+  background-color: #262d3f;
+  color: #ffffff;
+  padding: 15px; }

@@ -46,4 +46,7 @@ p {
 .primary-nav {
     @include flex;
     @include flex-justify-space-between;
+    background-color: $color-dark;
+    color: $color-white;
+    padding: 15px;
     }
