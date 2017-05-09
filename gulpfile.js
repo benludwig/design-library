@@ -41,9 +41,22 @@ gulp.task('pl-copy:font', function(){
 gulp.task('pl-sass', function(){
   return gulp.src(path.resolve(paths().source.css, '**/*.scss'))
     .pipe(sass().on('error', sass.logError))
-    .pipe(gulp.dest('./../_sass/'))
     .pipe(gulp.dest(path.resolve(paths().source.css)));
 });
+
+
+
+gulp.task('copysass', function () {
+  return gulp.src('source/css/*.scss') // Get source files with gulp.src
+    .pipe(gulp.dest('./../_sass/')) // Outputs the file in the destination folder
+});
+
+gulp.task('copyvariables', function () {
+  return gulp.src('source/css/abstracts/*.scss') // Get source files with gulp.src
+    .pipe(gulp.dest('./../_sass/abstracts/')) // Outputs the file in the destination folder
+});
+
+
 
 // CSS Copy
 gulp.task('pl-copy:css', function(){
