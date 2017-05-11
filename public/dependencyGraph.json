@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "timestamp": 1494298367676,
+  "timestamp": 1494467031801,
   "graph": {
     "options": {
       "directed": true,
@@ -21,17 +21,41 @@
         }
       },
       {
+        "v": "00-atoms/links/copy-link.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "00-atoms/links/footer-nav-link.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/02-organisms-footer-footer/02-organisms-footer-footer.rendered.html",
+          "lineagePattern": "organisms-footer"
+        }
+      },
+      {
+        "v": "00-atoms/links/primary-nav-link.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/02-organisms-primary-nav-primary-nav/02-organisms-primary-nav-primary-nav.rendered.html",
+          "lineagePattern": "organisms-primary-nav"
+        }
+      },
+      {
         "v": "00-atoms/logo/logo.mustache",
         "value": {
           "compileState": "clean",
-          "lineagePath": "../../patterns/01-molecules-primary-nav-primary-nav/01-molecules-primary-nav-primary-nav.rendered.html",
-          "lineagePattern": "molecules-primary-nav"
+          "lineagePath": "../../patterns/02-organisms-primary-nav-primary-nav/02-organisms-primary-nav-primary-nav.rendered.html",
+          "lineagePattern": "organisms-primary-nav"
         }
       },
       {
         "v": "00-atoms/typography/headline.mustache",
         "value": {
-          "compileState": "clean"
+          "compileState": "clean",
+          "lineagePath": "../../patterns/02-organisms-header-header/02-organisms-header-header.rendered.html",
+          "lineagePattern": "organisms-header"
         }
       },
       {
@@ -47,7 +71,31 @@
         }
       },
       {
-        "v": "01-molecules/primary-nav/primary-nav.mustache",
+        "v": "02-organisms/footer/footer.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/03-templates-homepage-homepage/03-templates-homepage-homepage.rendered.html",
+          "lineagePattern": "templates-homepage"
+        }
+      },
+      {
+        "v": "02-organisms/header/header.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/03-templates-homepage-homepage/03-templates-homepage-homepage.rendered.html",
+          "lineagePattern": "templates-homepage"
+        }
+      },
+      {
+        "v": "02-organisms/primary-nav/primary-nav.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/03-templates-homepage-homepage/03-templates-homepage-homepage.rendered.html",
+          "lineagePattern": "templates-homepage"
+        }
+      },
+      {
+        "v": "03-templates/homepage/homepage.mustache",
         "value": {
           "compileState": "clean"
         }
@@ -67,8 +115,38 @@
     ],
     "edges": [
       {
-        "v": "01-molecules/primary-nav/primary-nav.mustache",
+        "v": "02-organisms/footer/footer.mustache",
+        "w": "00-atoms/links/footer-nav-link.mustache",
+        "value": {}
+      },
+      {
+        "v": "02-organisms/header/header.mustache",
+        "w": "00-atoms/typography/headline.mustache",
+        "value": {}
+      },
+      {
+        "v": "02-organisms/primary-nav/primary-nav.mustache",
+        "w": "00-atoms/links/primary-nav-link.mustache",
+        "value": {}
+      },
+      {
+        "v": "02-organisms/primary-nav/primary-nav.mustache",
         "w": "00-atoms/logo/logo.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-templates/homepage/homepage.mustache",
+        "w": "02-organisms/primary-nav/primary-nav.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-templates/homepage/homepage.mustache",
+        "w": "02-organisms/header/header.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-templates/homepage/homepage.mustache",
+        "w": "02-organisms/footer/footer.mustache",
         "value": {}
       }
     ]

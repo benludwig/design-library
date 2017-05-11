@@ -56,7 +56,7 @@
   "patternStateCascade": ["inprogress", "inreview", "complete"],
   "patternStates": {
   },
-  "patternExportPatternPartials": ["molecules-primary-nav"],
+  "patternExportPatternPartials": ["organisms-primary-nav"],
   "patternExportDirectory": "./../_includes/",
   "cacheBust": true,
   "starterkitSubDir": "dist",
