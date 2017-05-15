@@ -26,7 +26,15 @@
 
 <body class="">
 
-  <button>Button</button>
+  <div class="comp01-top">
+    <div class="comp01-left"></div>
+    <div class="comp01-right"></div>
+  </div>
+
+  <div class="comp01-bottom">
+    <div class="comp01-left"></div>
+    <div class="comp01-right"></div>
+  </div>
 
   <!--DO NOT REMOVE-->
   <script type="text/json" id="sg-pattern-data-footer" class="sg-pattern-data">
@@ -35,18 +43,24 @@
       "patternLineageExists": false,
       "patternLineages": [],
       "lineage": [],
-      "patternLineageRExists": false,
-      "patternLineagesR": [],
-      "lineageR": [],
-      "patternLineageEExists": false,
-      "patternDesc": "<p>Buttons</p>\n",
+      "patternLineageRExists": true,
+      "patternLineagesR": [{
+        "lineagePattern": "templates-homepage",
+        "lineagePath": "../../patterns/03-templates-homepage-homepage/03-templates-homepage-homepage.rendered.html"
+      }],
+      "lineageR": [{
+        "lineagePattern": "templates-homepage",
+        "lineagePath": "../../patterns/03-templates-homepage-homepage/03-templates-homepage-homepage.rendered.html"
+      }],
+      "patternLineageEExists": true,
+      "patternDesc": "<p>Description</p>\n",
       "patternBreadcrumb": {
-        "patternType": "atoms",
-        "patternSubtype": "buttons"
+        "patternType": "organisms",
+        "patternSubtype": "comps"
       },
       "patternExtension": "mustache",
-      "patternName": "Buttons",
-      "patternPartial": "atoms-buttons",
+      "patternName": "Comp01",
+      "patternPartial": "organisms-comp01",
       "patternState": "",
       "patternEngineName": "mustache",
       "extraOutput": {}

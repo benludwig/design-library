@@ -117,3 +117,63 @@ p {
   background-color: #262d3f;
   color: #ffffff;
   padding: 15px; }
+
+/*Comps--------------------------------
+-------------------------------------*/
+.comp01-top {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+  width: 100%; }
+
+.comp01-top .comp01-left {
+  background-color: #262d3f;
+  width: 50%;
+  padding-top: 30%; }
+
+.comp01-top .comp01-right {
+  position: absolute;
+  left: 10%;
+  width: 90%;
+  padding-top: 20%;
+  background-color: #968d81; }
+
+.comp01-bottom {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  position: relative;
+  width: 100%;
+  padding: 0px 10%; }
+
+.comp01-bottom .comp01-left {
+  background-color: grey;
+  width: 50%;
+  padding-top: 30%; }
+
+.comp01-bottom .comp01-right {
+  background-color: #1a1a1a;
+  width: 50%;
+  padding-top: 20%; }
+
+.comp01-gs .comp01-top .comp01-left {
+  background: #e84950; }
+
+/*George Street -----------------------
+-------------------------------------*/
+.gs .comp01-top .comp01-right {
+  background: #00ff00 url("../images/GS3.jpg") no-repeat center; }

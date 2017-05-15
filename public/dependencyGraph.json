@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "timestamp": 1494467031801,
+  "timestamp": 1494810146164,
   "graph": {
     "options": {
       "directed": true,
@@ -71,6 +71,14 @@
         }
       },
       {
+        "v": "02-organisms/comps/comp01.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/03-templates-homepage-homepage/03-templates-homepage-homepage.rendered.html",
+          "lineagePattern": "templates-homepage"
+        }
+      },
+      {
         "v": "02-organisms/footer/footer.mustache",
         "value": {
           "compileState": "clean",
@@ -96,6 +104,14 @@
       },
       {
         "v": "03-templates/homepage/homepage.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/04-pages-homepage-homepage/04-pages-homepage-homepage.rendered.html",
+          "lineagePattern": "pages-homepage"
+        }
+      },
+      {
+        "v": "04-pages/homepage/homepage.mustache",
         "value": {
           "compileState": "clean"
         }
@@ -146,7 +162,17 @@
       },
       {
         "v": "03-templates/homepage/homepage.mustache",
+        "w": "02-organisms/comps/comp01.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-templates/homepage/homepage.mustache",
         "w": "02-organisms/footer/footer.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/homepage/homepage.mustache",
+        "w": "03-templates/homepage/homepage.mustache",
         "value": {}
       }
     ]
