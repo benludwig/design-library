@@ -34,15 +34,29 @@
  -------------------------------------*/
 /*Flexbox------------------------------
 -------------------------------------*/
+/*Image Aspect Ratios------------------
+-------------------------------------*/
+body {
+  font-family: "GTAmerica-Medium", serif;
+  color: #262d3f;
+  font-weight: 400; }
+
 a,
 button {
-  outline: 0; }
+  outline: 0;
+  text-decoration: none;
+  color: #262d3f;
+  font-weight: 400; }
 
 a:hover, a:active, a:focus {
   /* styling for any way a link is about to be used */ }
 
+img {
+  width: 100%;
+  height: auto; }
+
 h1 {
-  font-family: "GTAmericaBold", serif;
+  font-family: "GTAmerica-Medium", serif;
   font-size: 32px;
   color: #e84950; }
 
@@ -74,13 +88,17 @@ p {
   font-family: Georgia, serif;
   font-style: normal;
   font-weight: 400;
-  color: #000;
   font-size: 16px;
   line-height: 27px;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   letter-spacing: 0.1px;
   margin: 0; }
+
+.small-caps {
+  font-size: 12px;
+  text-transform: uppercase;
+  margin-bottom: 8px; }
 
 .card {
   background-color: blue;
@@ -105,7 +123,7 @@ p {
 
 /*Primary Nav--------------------------
 -------------------------------------*/
-.primary-nav {
+.primary-nav-inside {
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -114,9 +132,18 @@ p {
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   background-color: #262d3f;
   color: #ffffff;
   padding: 15px; }
+
+.primary-nav-inside .logo {
+  max-width: 20px; }
+
+.primary-nav-inside a {
+  color: #ffffff; }
 
 /*Comps--------------------------------
 -------------------------------------*/
@@ -177,3 +204,29 @@ p {
 -------------------------------------*/
 .gs .comp01-top .comp01-right {
   background: #00ff00 url("../images/GS3.jpg") no-repeat center; }
+
+/*Footer-------------------------------
+-------------------------------------*/
+.footer {
+  background-color: #262d3f;
+  color: #ffffff; }
+
+.footer-inside {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 15px; }
+
+.footer-third {
+  width: 33%; }
+
+.footer-inside .logo {
+  max-width: 20px; }
+
+.footer-link a {
+  color: #ffffff; }

@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "timestamp": 1494810146164,
+  "timestamp": 1496202745112,
   "graph": {
     "options": {
       "directed": true,
@@ -61,7 +61,17 @@
       {
         "v": "00-atoms/typography/paragraph.mustache",
         "value": {
-          "compileState": "clean"
+          "compileState": "clean",
+          "lineagePath": "../../patterns/02-organisms-footer-footer/02-organisms-footer-footer.rendered.html",
+          "lineagePattern": "organisms-footer"
+        }
+      },
+      {
+        "v": "00-atoms/typography/small-caps.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/02-organisms-footer-footer/02-organisms-footer-footer.rendered.html",
+          "lineagePattern": "organisms-footer"
         }
       },
       {
@@ -132,7 +142,22 @@
     "edges": [
       {
         "v": "02-organisms/footer/footer.mustache",
+        "w": "00-atoms/logo/logo.mustache",
+        "value": {}
+      },
+      {
+        "v": "02-organisms/footer/footer.mustache",
         "w": "00-atoms/links/footer-nav-link.mustache",
+        "value": {}
+      },
+      {
+        "v": "02-organisms/footer/footer.mustache",
+        "w": "00-atoms/typography/small-caps.mustache",
+        "value": {}
+      },
+      {
+        "v": "02-organisms/footer/footer.mustache",
+        "w": "00-atoms/typography/paragraph.mustache",
         "value": {}
       },
       {
