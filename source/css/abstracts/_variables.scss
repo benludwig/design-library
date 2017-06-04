@@ -187,6 +187,12 @@ $border-radius: 4px;
     align-items: center;
     }
 
+@mixin flex-align-start {
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+   }
+
 @mixin flex-align-end {
     -webkit-box-align: end;
     -ms-flex-align: end;

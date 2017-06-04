@@ -95,31 +95,11 @@ p {
   letter-spacing: 0.1px;
   margin: 0; }
 
-.small-caps {
+.small-caps,
+.footer-link {
   font-size: 12px;
   text-transform: uppercase;
   margin-bottom: 8px; }
-
-.card {
-  background-color: blue;
-  position: relative;
-  width: 100%;
-  padding-top: 90%;
-  /* 16:9 Aspect Ratio */ }
-
-.card-top {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 50%;
-  background-color: #333333; }
-
-.card-bottom {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 50%;
-  background-color: #ececec; }
 
 /*Primary Nav--------------------------
 -------------------------------------*/
@@ -147,7 +127,7 @@ p {
 
 /*Comps--------------------------------
 -------------------------------------*/
-.comp01-top {
+.overlap1-top {
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -159,19 +139,19 @@ p {
   position: relative;
   width: 100%; }
 
-.comp01-top .comp01-left {
+.overlap1-top .overlap1-left {
   background-color: #262d3f;
   width: 50%;
   padding-top: 30%; }
 
-.comp01-top .comp01-right {
+.overlap1-top .overlap1-right {
   position: absolute;
   left: 10%;
   width: 90%;
   padding-top: 20%;
   background-color: #968d81; }
 
-.comp01-bottom {
+.overlap1-bottom {
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -187,22 +167,22 @@ p {
   width: 100%;
   padding: 0px 10%; }
 
-.comp01-bottom .comp01-left {
+.overlap1-bottom .overlap1-left {
   background-color: grey;
   width: 50%;
   padding-top: 30%; }
 
-.comp01-bottom .comp01-right {
+.overlap1-bottom .overlap1-right {
   background-color: #1a1a1a;
   width: 50%;
   padding-top: 20%; }
 
-.comp01-gs .comp01-top .comp01-left {
+.overlap1-gs .overlap1-top .overlap1-left {
   background: #e84950; }
 
 /*George Street -----------------------
 -------------------------------------*/
-.gs .comp01-top .comp01-right {
+.gs .overlap1-top .overlap1-right {
   background: #00ff00 url("../images/GS3.jpg") no-repeat center; }
 
 /*Footer-------------------------------
@@ -212,21 +192,71 @@ p {
   color: #ffffff; }
 
 .footer-inside {
+  padding: 30px 20px; }
+
+.footer-link a {
+  color: #ffffff; }
+
+.footer-inside img {
+  display: block;
+  max-width: 20px; }
+
+.footer .columns {
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  padding: 15px; }
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start; }
 
-.footer-third {
-  width: 33%; }
+.footer .column-second {
+  padding: 0 0 0 10px; }
 
-.footer-inside .logo {
-  max-width: 20px; }
+@media screen and (max-width: 300px) {
+  .footer-logo,
+  .footer-third {
+    padding: 0 0 30px 0; } }
 
-.footer-link a {
-  color: #ffffff; }
+@media screen and (max-width: 700px) and (min-width: 300px) {
+  .footer-inside {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start; }
+  .footer-logo {
+    width: 10%; }
+  .footer-thirds {
+    width: 90%;
+    padding: 0 0 0 20px; }
+  .footer-third {
+    padding: 0 0 30px 0; } }
+
+@media screen and (min-width: 701px) {
+  .footer-logo {
+    padding: 0 0 30px 0; }
+  .footer-thirds {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start; }
+  .footer-third.first {
+    width: 20%; }
+  .footer-third.second {
+    width: 50%;
+    padding: 0 30px 0 0; }
+  .footer-third.third {
+    width: 30%; }
+  .footer .columns {
+    -webkit-justify-content: flex-end;
+    -ms-flex-pack: end;
+    justify-content: flex-end; } }
