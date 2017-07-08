@@ -72,9 +72,19 @@ $color-white: #ffffff;
  $line-height-paragraph: 1em;
  $letter-spacing-standard: 0.5px;
 
+@mixin h1-large {
+ font-family: $font-primary;
+ font-size: $font-size-headline-larger;
+ }
+
 @mixin h1 {
   font-family: $font-primary;
-  font-size: $font-size-headline-larger;
+  font-size: $font-size-headline-large;
+  }
+
+@mixin h2 {
+  font-family: $font-primary;
+  font-size: $font-size-headline-medium;
   }
 
 @mixin p {

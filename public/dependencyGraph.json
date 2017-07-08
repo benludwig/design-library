@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "timestamp": 1496593235826,
+  "timestamp": 1499539999413,
   "graph": {
     "options": {
       "directed": true,
@@ -51,11 +51,25 @@
         }
       },
       {
-        "v": "00-atoms/typography/headline.mustache",
+        "v": "00-atoms/typography/h1-large.mustache",
         "value": {
           "compileState": "clean",
           "lineagePath": "../../patterns/02-organisms-header-header/02-organisms-header-header.rendered.html",
           "lineagePattern": "organisms-header"
+        }
+      },
+      {
+        "v": "00-atoms/typography/h1.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/02-organisms-copy-block-copy-block/02-organisms-copy-block-copy-block.rendered.html",
+          "lineagePattern": "organisms-copy-block"
+        }
+      },
+      {
+        "v": "00-atoms/typography/h2.mustache",
+        "value": {
+          "compileState": "clean"
         }
       },
       {
@@ -69,7 +83,9 @@
       {
         "v": "00-atoms/typography/paragraph.mustache",
         "value": {
-          "compileState": "clean"
+          "compileState": "clean",
+          "lineagePath": "../../patterns/02-organisms-copy-block-copy-block/02-organisms-copy-block-copy-block.rendered.html",
+          "lineagePattern": "organisms-copy-block"
         }
       },
       {
@@ -81,13 +97,13 @@
         }
       },
       {
-        "v": "01-molecules/overlap-patterns/overlap-1.mustache",
+        "v": "01-molecules/work-preview/work-preview.mustache",
         "value": {
           "compileState": "clean"
         }
       },
       {
-        "v": "01-molecules/work-preview/work-preview.mustache",
+        "v": "02-organisms/copy-block/copy-block.mustache",
         "value": {
           "compileState": "clean"
         }
@@ -145,6 +161,16 @@
     ],
     "edges": [
       {
+        "v": "02-organisms/copy-block/copy-block.mustache",
+        "w": "00-atoms/typography/h1.mustache",
+        "value": {}
+      },
+      {
+        "v": "02-organisms/copy-block/copy-block.mustache",
+        "w": "00-atoms/typography/paragraph.mustache",
+        "value": {}
+      },
+      {
         "v": "02-organisms/footer/footer.mustache",
         "w": "00-atoms/logo/logo.mustache",
         "value": {}
@@ -166,7 +192,7 @@
       },
       {
         "v": "02-organisms/header/header.mustache",
-        "w": "00-atoms/typography/headline.mustache",
+        "w": "00-atoms/typography/h1-large.mustache",
         "value": {}
       },
       {

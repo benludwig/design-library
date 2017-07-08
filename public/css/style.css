@@ -55,9 +55,19 @@ img {
   width: 100%;
   height: auto; }
 
-h1 {
+h1.large {
   font-family: "GTAmerica-Medium", serif;
   font-size: 32px;
+  color: #ea6922; }
+
+h1 {
+  font-family: "GTAmerica-Medium", serif;
+  font-size: 18px;
+  color: #e84950; }
+
+h2 {
+  font-family: "GTAmerica-Medium", serif;
+  font-size: 16px;
   color: #e84950; }
 
 button {
@@ -124,66 +134,6 @@ p {
 
 .primary-nav-inside a {
   color: #ffffff; }
-
-/*Comps--------------------------------
--------------------------------------*/
-.overlap1-top {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  position: relative;
-  width: 100%; }
-
-.overlap1-top .overlap1-left {
-  background-color: #262d3f;
-  width: 50%;
-  padding-top: 30%; }
-
-.overlap1-top .overlap1-right {
-  position: absolute;
-  left: 10%;
-  width: 90%;
-  padding-top: 20%;
-  background-color: #968d81; }
-
-.overlap1-bottom {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: end;
-  -ms-flex-align: end;
-  align-items: flex-end;
-  position: relative;
-  width: 100%;
-  padding: 0px 10%; }
-
-.overlap1-bottom .overlap1-left {
-  background-color: grey;
-  width: 50%;
-  padding-top: 30%; }
-
-.overlap1-bottom .overlap1-right {
-  background-color: #1a1a1a;
-  width: 50%;
-  padding-top: 20%; }
-
-.overlap1-gs .overlap1-top .overlap1-left {
-  background: #e84950; }
-
-/*George Street -----------------------
--------------------------------------*/
-.gs .overlap1-top .overlap1-right {
-  background: #00ff00 url("../images/GS3.jpg") no-repeat center; }
 
 /*Footer-------------------------------
 -------------------------------------*/
