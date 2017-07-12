@@ -29,17 +29,17 @@ img {
 
 h1.large {
     @include h1-large;
-    color: $color-warm;
+    color: $color-light;
     }
 
 h1 {
     @include h1;
-    color: $color-hot;
+    color: $color-light;
     }
 
 h2 {
     @include h2;
-    color: $color-hot;
+    color: $color-light;
     }
 
 button {
@@ -48,6 +48,7 @@ button {
 
 p {
     @include p;
+    color: $color-light;
     }
 
 .small-caps,
@@ -65,7 +66,7 @@ p {
     @include flex-justify-space-between;
     @include flex-align-center;
     background-color: $color-dark;
-    color: $color-white;
+    color: $color-light;
     padding: 15px;
     }
 
@@ -74,7 +75,7 @@ p {
     }
 
 .primary-nav-inside a {
-    color: $color-white;
+    color: $color-light;
     }
 
 /*Footer-------------------------------
@@ -82,7 +83,7 @@ p {
 
 .footer {
     background-color: $color-dark;
-    color: $color-white;
+    color: $color-light;
     }
 
 .footer-inside {
@@ -90,7 +91,7 @@ p {
     }
 
 .footer-link a {
-    color: $color-white;
+    color: $color-light;
     }
 
 .footer-inside img {
