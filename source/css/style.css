@@ -5,22 +5,22 @@
 /*Font Files---------------------------
 -------------------------------------*/
 @font-face {
+  font-family: 'Butler';
+  src: url("../fonts/Butler/butler_medium_stencil-webfont.woff2") format("woff2"), url("../fonts/Butler/butler_medium_stencil-webfont.woff") format("woff");
+  /* Pretty Modern Browsers */ }
+
+@font-face {
+  font-family: 'CircularBold';
+  src: url("../fonts/Circular/lineto-circular-bold.eot"), url("../fonts/Circular/lineto-circular-bold.woff2") format("woff2"), url("../fonts/Circular/lineto-circular-bold.woff") format("woff");
+  /* Pretty Modern Browsers */ }
+
+@font-face {
   font-family: 'GTAmericaBold';
   src: url("../fonts/GTAmerica/GTAmerica-Bold.eot"), url("../fonts/GTAmerica/GTAmerica-Bold.woff2") format("woff2"), url("../fonts/GTAmerica/GTAmerica-Bold.woff") format("woff"), url("../fonts/GTAmerica/GTAmerica-Bold.ttf") format("truetype"), url("../fonts/GTAmerica/GTAmerica-Bold.svg") format("svg");
   /* Legacy iOS */ }
 
 @font-face {
-  font-family: 'GTAmerica-CompressedBold';
-  src: url("../fonts/GTAmerica/GTAmerica-CompressedBold.eot"), url("../fonts/GTAmerica/GTAmerica-CompressedBold.woff2") format("woff2"), url("../fonts/GTAmerica/GTAmerica-CompressedBold.woff") format("woff"), url("../fonts/GTAmerica/GTAmerica-CompressedBold.ttf") format("truetype"), url("../fonts/GTAmerica/GTAmerica-CompressedBold.svg") format("svg");
-  /* Legacy iOS */ }
-
-@font-face {
-  font-family: 'GTAmerica-CondensedBold';
-  src: url("../fonts/GTAmerica/GTAmerica-CondensedBold.eot"), url("../fonts/GTAmerica/GTAmerica-CondensedBold.woff2") format("woff2"), url("../fonts/GTAmerica/GTAmerica-CondensedBold.woff") format("woff"), url("../fonts/GTAmerica/GTAmerica-CondensedBold.ttf") format("truetype"), url("../fonts/GTAmerica/GTAmerica-CondensedBold.svg") format("svg");
-  /* Legacy iOS */ }
-
-@font-face {
-  font-family: 'GTAmerica-Medium';
+  font-family: 'GTAmericaMedium';
   src: url("../fonts/GTAmerica/GTAmerica-Medium.eot"), url("../fonts/GTAmerica/GTAmerica-Medium.woff2") format("woff2"), url("../fonts/GTAmerica/GTAmerica-Medium.woff") format("woff"), url("../fonts/GTAmerica/GTAmerica-Medium.ttf") format("truetype"), url("../fonts/GTAmerica/GTAmerica-Medium.svg") format("svg");
   /* Legacy iOS */ }
 
@@ -34,19 +34,15 @@
  -------------------------------------*/
 /*Flexbox------------------------------
 -------------------------------------*/
-/*Image Aspect Ratios------------------
--------------------------------------*/
 body {
-  font-family: "GTAmerica-Medium", serif;
-  color: #181818;
-  font-weight: 400; }
+  font-family: "GTAmericaMedium", sans-serif;
+  color: #282a2d; }
 
 a,
 button {
   outline: 0;
   text-decoration: none;
-  color: #181818;
-  font-weight: 400; }
+  color: #282a2d; }
 
 a:hover, a:active, a:focus {
   /* styling for any way a link is about to be used */ }
@@ -56,18 +52,33 @@ img {
   height: auto; }
 
 h1.large {
-  font-family: "GTAmerica-Medium", serif;
-  font-size: 32px;
+  font-weight: normal;
+  font-style: normal;
+  font-family: "Butler", serif;
+  font-size: 92px;
+  line-height: 80px;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
   color: #d3d0cd; }
 
 h1 {
-  font-family: "GTAmerica-Medium", serif;
-  font-size: 18px;
+  font-weight: normal;
+  font-style: normal;
+  font-family: "Butler", serif;
+  font-size: 40px;
+  line-height: 40px;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
   color: #d3d0cd; }
 
 h2 {
-  font-family: "GTAmerica-Medium", serif;
-  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-family: "Butler", serif;
+  font-size: 30px;
+  line-height: 30px;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
   color: #d3d0cd; }
 
 button {
@@ -96,22 +107,29 @@ button {
   padding: 8px 15px; }
 
 p {
-  font-family: Georgia, serif;
+  font-weight: normal;
   font-style: normal;
+  font-family: "GTAmericaMedium", sans-serif;
   font-weight: 400;
   font-size: 16px;
-  line-height: 27px;
+  line-height: 22px;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
-  letter-spacing: 0.1px;
+  letter-spacing: 0px;
   margin: 0;
   color: #d3d0cd; }
 
-.small-caps,
+.small,
 .footer-link {
-  font-size: 12px;
+  font-weight: normal;
+  font-style: normal;
+  font-family: "CircularBold", sans-serif;
+  font-size: 11px;
   text-transform: uppercase;
-  margin-bottom: 8px; }
+  letter-spacing: 0.75px;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  padding-bottom: 10px; }
 
 /*Primary Nav--------------------------
 -------------------------------------*/
@@ -127,31 +145,58 @@ p {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: #181818;
+  background-color: #282a2d;
   color: #d3d0cd;
-  padding: 15px; }
+  padding: 0px 30px 0px 30px; }
 
-.primary-nav-inside .logo {
-  max-width: 20px; }
+.primary-nav-third {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.primary-nav-inside .logo img {
+  max-width: 14px; }
+
+.primary-nav-link {
+  font-weight: normal;
+  font-style: normal;
+  font-family: "CircularBold", sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  letter-spacing: 0.25px;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased; }
 
 .primary-nav-inside a {
-  color: #d3d0cd; }
+  color: #ffffff;
+  display: block;
+  padding: 15px 0 15px 0; }
 
 /*Footer-------------------------------
 -------------------------------------*/
 .footer {
-  background-color: #181818;
+  background-color: #282a2d;
   color: #d3d0cd; }
 
 .footer-inside {
-  padding: 30px 20px; }
+  padding: 40px 30px 30px 30px; }
 
 .footer-link a {
-  color: #d3d0cd; }
+  color: #d3d0cd;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease; }
+
+.footer-link a:hover {
+  color: #ffffff; }
 
 .footer-inside img {
   display: block;
-  max-width: 20px; }
+  max-width: 14px; }
 
 .footer .columns {
   display: -webkit-box;
@@ -164,7 +209,7 @@ p {
   align-items: flex-start; }
 
 .footer .column-second {
-  padding: 0 0 0 10px; }
+  padding: 0 0 0 20px; }
 
 @media screen and (max-width: 300px) {
   .footer-logo,
