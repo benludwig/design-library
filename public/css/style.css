@@ -103,8 +103,15 @@ button {
   position: relative;
   background-color: rgba(255, 255, 255, 0);
   color: #d3d0cd;
-  font-size: 13px;
-  padding: 8px 15px; }
+  font-weight: normal;
+  font-style: normal;
+  font-family: "CircularBold", sans-serif;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.75px;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  padding: 7px 14px; }
 
 p {
   font-weight: normal;
@@ -146,8 +153,7 @@ p {
   -ms-flex-align: center;
   align-items: center;
   background-color: #282a2d;
-  color: #d3d0cd;
-  padding: 0px 30px 0px 30px; }
+  color: #d3d0cd; }
 
 .primary-nav-third {
   display: -webkit-box;
@@ -182,9 +188,6 @@ p {
 .footer {
   background-color: #282a2d;
   color: #d3d0cd; }
-
-.footer-inside {
-  padding: 40px 30px 30px 30px; }
 
 .footer-link a {
   color: #d3d0cd;
