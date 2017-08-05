@@ -135,6 +135,9 @@ p {
 
 /*Primary Nav--------------------------
 -------------------------------------*/
+.primary-nav {
+  background-color: #282a2d; }
+
 .primary-nav-inside {
   display: -webkit-box;
   display: -moz-box;

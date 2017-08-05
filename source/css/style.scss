@@ -56,6 +56,10 @@ p {
 /*Primary Nav--------------------------
 -------------------------------------*/
 
+.primary-nav {
+    background-color: $color-dark;
+    }
+
 .primary-nav-inside {
     @include flex;
     @include flex-justify-space-between;
