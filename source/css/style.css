@@ -1,5 +1,3 @@
-/*Imports------------------------------
--------------------------------------*/
 /*Colors-------------------------------
 -------------------------------------*/
 /*Font Files---------------------------
@@ -36,13 +34,22 @@
 -------------------------------------*/
 body {
   font-family: "GTAmericaMedium", sans-serif;
-  color: #282a2d; }
+  color: #d3d0cd;
+  background-color: #282a2d; }
+
+::selection {
+  background: #e84950;
+  /* WebKit/Blink Browsers */ }
+
+::-moz-selection {
+  background: #e84950;
+  /* Gecko Browsers */ }
 
 a,
 button {
   outline: 0;
   text-decoration: none;
-  color: #282a2d; }
+  color: #d3d0cd; }
 
 a:hover, a:active, a:focus {
   /* styling for any way a link is about to be used */ }
@@ -50,16 +57,6 @@ a:hover, a:active, a:focus {
 img {
   width: 100%;
   height: auto; }
-
-h1.large {
-  font-weight: normal;
-  font-style: normal;
-  font-family: "Butler", serif;
-  font-size: 92px;
-  line-height: 80px;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  color: #d3d0cd; }
 
 h1 {
   font-weight: normal;
@@ -69,7 +66,7 @@ h1 {
   line-height: 40px;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
-  color: #d3d0cd; }
+  padding-bottom: 15px; }
 
 h2 {
   font-weight: normal;
@@ -78,8 +75,7 @@ h2 {
   font-size: 30px;
   line-height: 30px;
   -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  color: #d3d0cd; }
+  -webkit-font-smoothing: antialiased; }
 
 button {
   -moz-box-sizing: border-box;
@@ -123,8 +119,7 @@ p {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   letter-spacing: 0px;
-  margin: 0;
-  color: #d3d0cd; }
+  margin: 0; }
 
 .small,
 .footer-link {
@@ -151,9 +146,7 @@ p {
   justify-content: space-between;
   -webkit-box-align: center;
   -ms-flex-align: center;
-  align-items: center;
-  background-color: #282a2d;
-  color: #d3d0cd; }
+  align-items: center; }
 
 .primary-nav-third {
   display: -webkit-box;
@@ -222,17 +215,11 @@ p {
 
 .primary-nav-inside a {
   color: #ffffff;
-  display: block;
-  padding: 15px 0 15px 0; }
+  display: block; }
 
 /*Footer-------------------------------
 -------------------------------------*/
-.footer {
-  background-color: #282a2d;
-  color: #d3d0cd; }
-
 .footer-link a {
-  color: #d3d0cd;
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease; }
 
