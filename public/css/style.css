@@ -149,7 +149,8 @@ p {
   justify-content: space-between;
   -webkit-box-align: center;
   -ms-flex-align: center;
-  align-items: center; }
+  align-items: center;
+  height: 60px; }
 
 .primary-nav-third {
   display: -webkit-box;
@@ -162,7 +163,7 @@ p {
   align-items: center; }
 
 .primary-nav-inside .logo img {
-  max-width: 14px; }
+  max-width: 16px; }
 
 .primary-nav-third.first {
   width: calc(50% - 10px);
@@ -210,7 +211,17 @@ p {
   font-weight: normal;
   font-style: normal;
   font-family: "CircularBold", sans-serif;
-  font-size: 13px;
+  font-size: 16px;
+  line-height: 18px;
+  letter-spacing: 0.25px;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased; }
+
+.work-cycle .title {
+  font-weight: normal;
+  font-style: normal;
+  font-family: "CircularBold", sans-serif;
+  font-size: 16px;
   line-height: 18px;
   letter-spacing: 0.25px;
   -moz-osx-font-smoothing: grayscale;
