@@ -33,17 +33,17 @@
 /*Flexbox------------------------------
 -------------------------------------*/
 body {
-  font-family: "GTAmericaMedium", sans-serif;
-  color: #d3d0cd;
-  background-color: #282a2d; }
+  font-family: "GTAmericaMedium", sans-serif; }
 
 ::selection {
-  background: #e84950;
-  /* WebKit/Blink Browsers */ }
+  background: #fcf113;
+  /* WebKit/Blink Browsers */
+  color: #282a2d; }
 
 ::-moz-selection {
-  background: #e84950;
-  /* Gecko Browsers */ }
+  background: #fcf113;
+  /* Gecko Browsers */
+  color: #282a2d; }
 
 a,
 button {
@@ -166,7 +166,6 @@ p {
   max-width: 16px; }
 
 .primary-nav-third.first {
-  width: calc(50% - 10px);
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -180,21 +179,6 @@ p {
   align-items: center; }
 
 .primary-nav-third.second {
-  width: 20px;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center; }
-
-.primary-nav-third.third {
-  width: calc(50% - 10px);
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -229,7 +213,8 @@ p {
 
 .primary-nav-inside a {
   color: #ffffff;
-  display: block; }
+  display: block;
+  padding: 10px; }
 
 /*Footer-------------------------------
 -------------------------------------*/

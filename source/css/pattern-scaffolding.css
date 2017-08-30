@@ -3,6 +3,7 @@
  * styles for grids, animations, color swatches, etc.
  * These styles will not be your production CSS.
  */
+
 #sg-patterns {
     -webkit-box-sizing: border-box !important;
     box-sizing: border-box !important;
@@ -51,14 +52,25 @@
     line-height: 1;
     }
 
+#atoms-logo > div.sg-pattern-example {
+    background-color: #282a2d;
+    padding: 14px;
+    }
+
 #atoms-logo > div.sg-pattern-example img {
     max-width: 14px;
     }
 
 #molecules-primary-nav > div.sg-pattern-example .primary-nav-inside {
-    padding: 30px;
+    padding: 30px 20px;
     }
 
 #molecules-footer > div.sg-pattern-example .footer-inside {
     padding: 40px 30px;
+    background-color: #282a2d;
+    }
+
+#molecules-footer > div.sg-pattern-example .small,
+#molecules-footer > div.sg-pattern-example p {
+    color: #d3d0cd;
     }
