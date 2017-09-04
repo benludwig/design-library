@@ -110,7 +110,7 @@ li {
     @include nav-link;
     }
 
-.primary-nav-inside a {
+.primary-nav-third.second a {
     @include transition;
     color: $color-white;
     display: block;
@@ -119,7 +119,7 @@ li {
     border-bottom: 1px solid rgba(255, 255, 255, 0);
     }
 
-.primary-nav-inside a:hover {
+.primary-nav-third.second a:hover {
     @include transition;
     color: $color-white;
     display: block;

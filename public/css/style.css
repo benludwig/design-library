@@ -244,7 +244,7 @@ li {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased; }
 
-.primary-nav-inside a {
+.primary-nav-third.second a {
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
   color: #ffffff;
@@ -253,7 +253,7 @@ li {
   margin-left: 15px;
   border-bottom: 1px solid rgba(255, 255, 255, 0); }
 
-.primary-nav-inside a:hover {
+.primary-nav-third.second a:hover {
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
   color: #ffffff;
