@@ -140,6 +140,18 @@ ul, menu, dir {
   -webkit-margin-end: 0px;
   -webkit-padding-start: 0px; }
 
+li {
+  font-weight: normal;
+  font-style: normal;
+  font-family: "GTAmericaRegular", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  letter-spacing: 0px;
+  margin: 0; }
+
 .small,
 .footer-link {
   font-weight: normal;
