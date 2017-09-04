@@ -22,6 +22,16 @@
   src: url("../fonts/GTAmerica/GTAmerica-Medium.eot"), url("../fonts/GTAmerica/GTAmerica-Medium.woff2") format("woff2"), url("../fonts/GTAmerica/GTAmerica-Medium.woff") format("woff"), url("../fonts/GTAmerica/GTAmerica-Medium.ttf") format("truetype"), url("../fonts/GTAmerica/GTAmerica-Medium.svg") format("svg");
   /* Legacy iOS */ }
 
+@font-face {
+  font-family: 'GTAmericaRegular';
+  src: url("../fonts/GTAmerica/GTAmerica-Regular.eot"), url("../fonts/GTAmerica/GTAmerica-Regular.woff2") format("woff2"), url("../fonts/GTAmerica/GTAmerica-Regular.woff") format("woff"), url("../fonts/GTAmerica/GTAmerica-Regular.ttf") format("truetype"), url("../fonts/GTAmerica/GTAmerica-Regular.svg") format("svg");
+  /* Legacy iOS */ }
+
+@font-face {
+  font-family: 'GTAmericaThin';
+  src: url("../fonts/GTAmerica/GTAmerica-Thin.eot"), url("../fonts/GTAmerica/GTAmerica-Thin.woff2") format("woff2"), url("../fonts/GTAmerica/GTAmerica-Thin.woff") format("woff"), url("../fonts/GTAmerica/GTAmerica-Thin.ttf") format("truetype"), url("../fonts/GTAmerica/GTAmerica-Thin.svg") format("svg");
+  /* Legacy iOS */ }
+
 /*Typography---------------------------
  -------------------------------------*/
 /*Shapes-------------------------------
@@ -33,7 +43,7 @@
 /*Flexbox------------------------------
 -------------------------------------*/
 body {
-  font-family: "GTAmericaMedium", sans-serif; }
+  font-family: "GTAmericaRegular", sans-serif; }
 
 ::selection {
   background: #fcf113;
@@ -112,7 +122,7 @@ button {
 p {
   font-weight: normal;
   font-style: normal;
-  font-family: "GTAmericaMedium", sans-serif;
+  font-family: "GTAmericaRegular", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
@@ -120,6 +130,15 @@ p {
   -webkit-font-smoothing: antialiased;
   letter-spacing: 0px;
   margin: 0; }
+
+ul, menu, dir {
+  display: block;
+  list-style-type: none;
+  -webkit-margin-before: 0em;
+  -webkit-margin-after: 0em;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+  -webkit-padding-start: 0px; }
 
 .small,
 .footer-link {
