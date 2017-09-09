@@ -13,90 +13,68 @@
   /* Pretty Modern Browsers */ }
 
 @font-face {
-  font-family: 'GTAmericaBold';
-  src: url("../fonts/GTAmerica/GTAmerica-Bold.eot"), url("../fonts/GTAmerica/GTAmerica-Bold.woff2") format("woff2"), url("../fonts/GTAmerica/GTAmerica-Bold.woff") format("woff"), url("../fonts/GTAmerica/GTAmerica-Bold.ttf") format("truetype"), url("../fonts/GTAmerica/GTAmerica-Bold.svg") format("svg");
-  /* Legacy iOS */ }
-
-@font-face {
-  font-family: 'GTAmericaMedium';
-  src: url("../fonts/GTAmerica/GTAmerica-Medium.eot"), url("../fonts/GTAmerica/GTAmerica-Medium.woff2") format("woff2"), url("../fonts/GTAmerica/GTAmerica-Medium.woff") format("woff"), url("../fonts/GTAmerica/GTAmerica-Medium.ttf") format("truetype"), url("../fonts/GTAmerica/GTAmerica-Medium.svg") format("svg");
-  /* Legacy iOS */ }
-
-@font-face {
   font-family: 'GTAmericaRegular';
   src: url("../fonts/GTAmerica/GTAmerica-Regular.eot"), url("../fonts/GTAmerica/GTAmerica-Regular.woff2") format("woff2"), url("../fonts/GTAmerica/GTAmerica-Regular.woff") format("woff"), url("../fonts/GTAmerica/GTAmerica-Regular.ttf") format("truetype"), url("../fonts/GTAmerica/GTAmerica-Regular.svg") format("svg");
   /* Legacy iOS */ }
 
-@font-face {
-  font-family: 'GTAmericaThin';
-  src: url("../fonts/GTAmerica/GTAmerica-Thin.eot"), url("../fonts/GTAmerica/GTAmerica-Thin.woff2") format("woff2"), url("../fonts/GTAmerica/GTAmerica-Thin.woff") format("woff"), url("../fonts/GTAmerica/GTAmerica-Thin.ttf") format("truetype"), url("../fonts/GTAmerica/GTAmerica-Thin.svg") format("svg");
-  /* Legacy iOS */ }
-
 /*Typography---------------------------
  -------------------------------------*/
-/*Shapes-------------------------------
- -------------------------------------*/
-/*Shadows------------------------------
- -------------------------------------*/
-/*Buttons------------------------------
- -------------------------------------*/
+html {
+  font-size: 100%; }
+
 /*Flexbox------------------------------
 -------------------------------------*/
+/*Resets-------------------------------
+-------------------------------------*/
+body, h1, h2, h3, h4, h5, h6,
+p, blockquote, pre, hr,
+dl, dd, ol, ul, figure {
+  margin: 0;
+  padding: 0; }
+
+/*Typography---------------------------
+-------------------------------------*/
 body {
-  font-family: "GTAmericaRegular", sans-serif; }
-
-::selection {
-  background: #fcf113;
-  color: #282a2d; }
-
-::-moz-selection {
-  background: #fcf113;
-  color: #282a2d; }
-
-a {
-  outline: 0;
-  text-decoration: none;
-  color: #d3d0cd; }
-
-a:hover, a:active, a:focus {
-  /* styling for any way a link is about to be used */ }
-
-img {
-  width: 100%;
-  height: auto; }
-
-h1 {
-  font-weight: normal;
-  font-style: normal;
-  font-family: "Butler", serif;
-  font-size: 40px;
-  line-height: 40px;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  padding-bottom: 15px; }
-
-h2 {
-  font-weight: normal;
-  font-style: normal;
-  font-family: "Butler", serif;
-  font-size: 30px;
-  line-height: 30px;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased; }
-
-p {
-  font-weight: normal;
-  font-style: normal;
   font-family: "GTAmericaRegular", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
+  letter-spacing: 0px;
+  margin: 0;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
-  letter-spacing: 0px;
-  margin: 0; }
+  font-weight: normal;
+  font-style: normal;
+  background-color: #282a2d;
+  color: #d3d0cd; }
 
-ul, menu, dir {
+h1 {
+  font-family: "Butler", serif;
+  font-size: 40px;
+  line-height: 40px;
+  padding-bottom: 15px;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-weight: normal;
+  font-style: normal;
+  padding-bottom: 20px; }
+
+h2 {
+  font-family: "Butler", serif;
+  font-size: 30px;
+  line-height: 30px;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-weight: normal;
+  font-style: normal;
+  padding-bottom: 20px; }
+
+p {
+  padding-bottom: 15px; }
+
+/*Lists---------------------------------
+-------------------------------------*/
+ul, menu, dir, dt, dl {
   display: block;
   list-style-type: none;
   -webkit-margin-before: 0em;
@@ -105,48 +83,112 @@ ul, menu, dir {
   -webkit-margin-end: 0px;
   -webkit-padding-start: 0px; }
 
-li {
-  font-weight: normal;
-  font-style: normal;
-  font-family: "GTAmericaRegular", sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 22px;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  letter-spacing: 0px;
-  margin: 0; }
+/*Links--------------------------------
+-------------------------------------*/
+a {
+  outline: 0;
+  text-decoration: none;
+  color: #d3d0cd; }
 
-.block-support {
-  font-weight: normal;
-  font-style: normal;
-  font-family: "GTAmericaRegular", sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 22px;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  letter-spacing: 0px;
-  margin: 0;
-  color: #9e9e9e; }
+/* Link Header */
+a.link-header {
+  padding: 5px 0px 3px 0px;
+  margin-left: 13px;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  border-bottom: 1px solid rgba(255, 255, 255, 0); }
 
-.small {
-  font-weight: normal;
-  font-style: normal;
+a.link-header:hover,
+a.link-header:active,
+a.link-header:focus {
+  border-bottom: 1px solid white; }
+
+/* Link Inline */
+a.link-inline {
+  border-bottom: 1px solid #d3d0cd; }
+
+a.link-inline:hover,
+a.link-inline:active,
+a.link-inline:focus {
+  border-bottom: 1px solid inherit; }
+
+/* Link Support */
+a.link-support {
   font-family: "CircularBold", sans-serif;
   font-size: 11px;
   text-transform: uppercase;
   letter-spacing: 0.75px;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
-  padding-bottom: 10px; }
+  font-weight: normal;
+  font-style: normal;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease; }
+
+a.link-footer:hover,
+a.link-footer:active,
+a.link-footer:focus {
+  color: #ffffff; }
+
+/* Link Credits */
+a.link-credits:after {
+  display: inline-block;
+  width: 13px;
+  height: 13px;
+  content: url("/assets/images/link.svg");
+  margin-left: 5px; }
+
+/* Link Cycle */
+a.link-cycle {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 16px; }
+
+a.link-cycle img {
+  width: 20px; }
+
+a.link-cycle span.prev {
+  padding-left: 4px; }
+
+a.link-cycle span.next {
+  padding-right: 4px; }
+
+/* Link Footer */
+a.link-footer {
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease; }
+
+a.link-footer:hover,
+a.link-footer:active,
+a.link-footer:focus {
+  color: #ffffff; }
+
+/* Link Image */
+/*Images-------------------------------
+-------------------------------------*/
+img {
+  width: 100%;
+  height: auto; }
+
+/*Highlights---------------------------
+-------------------------------------*/
+::selection {
+  background: #fcf113;
+  color: #282a2d; }
+
+::-moz-selection {
+  background: #fcf113;
+  color: #282a2d; }
 
 /*Primary Nav--------------------------
 -------------------------------------*/
 .primary-nav {
-  background-color: #282a2d; }
-
-.primary-nav-inside {
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -158,9 +200,10 @@ li {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  height: 60px; }
+  height: 60px;
+  background-color: #282a2d; }
 
-.primary-nav-third {
+.primary-nav-half {
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -170,80 +213,25 @@ li {
   -ms-flex-align: center;
   align-items: center; }
 
-.primary-nav-inside .logo img {
-  max-width: 18px; }
-
-.primary-nav-third.first {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
+.primary-nav-half.first {
   -webkit-box-pack: start;
   -ms-flex-pack: start;
-  justify-content: flex-start;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center; }
+  justify-content: flex-start; }
 
-.primary-nav-third.second {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
+.primary-nav-half.second {
   -webkit-justify-content: flex-end;
   -ms-flex-pack: end;
-  justify-content: flex-end;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center; }
+  justify-content: flex-end; }
 
-.primary-nav-link {
-  font-weight: normal;
-  font-style: normal;
-  font-family: "GTAmericaRegular", sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 18px;
-  letter-spacing: 0.25px;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased; }
-
-.work-cycle .title {
-  font-weight: normal;
-  font-style: normal;
-  font-family: "GTAmericaRegular", sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 18px;
-  letter-spacing: 0.25px;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased; }
-
-.primary-nav-third.second a {
-  -webkit-transition: all 0.2s ease;
-  transition: all 0.2s ease;
-  color: #ffffff;
-  display: block;
-  padding: 5px 0px 3px 0px;
-  margin-left: 15px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0); }
-
-.primary-nav-third.second a:hover {
-  -webkit-transition: all 0.2s ease;
-  transition: all 0.2s ease;
-  color: #ffffff;
-  display: block;
-  padding: 5px 0px 3px 0px;
-  margin-left: 15px;
-  border-bottom: 1px solid white; }
+.primary-nav .logo img {
+  max-width: 15px; }
 
 /*Footer-------------------------------
 -------------------------------------*/
-.footer a {
-  -webkit-transition: all 0.2s ease;
-  transition: all 0.2s ease; }
-
-.footer a:hover {
-  color: #ffffff; }
+.footer {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  background-color: #1a1a1a; }

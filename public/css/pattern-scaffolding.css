@@ -4,6 +4,11 @@
  * These styles will not be your production CSS.
  */
 
+body {
+  background-color: #fff;
+  color: #282a2d;
+  }
+
 #sg-patterns {
     -webkit-box-sizing: border-box !important;
     box-sizing: border-box !important;
@@ -60,6 +65,21 @@
 #atoms-logo > div.sg-pattern-example img {
     max-width: 14px;
     }
+
+#atoms-link-credits > div.sg-pattern-example,
+#atoms-link-cycle > div.sg-pattern-example,
+#atoms-link-footer > div.sg-pattern-example,
+#atoms-link-header > div.sg-pattern-example,
+#atoms-link-image > div.sg-pattern-example,
+#atoms-link-inline > div.sg-pattern-example,
+#atoms-link-support > div.sg-pattern-example {
+    background-color: #282a2d;
+    padding: 14px;
+    }
+
+
+
+
 
 #molecules-primary-nav > div.sg-pattern-example .primary-nav-inside {
     padding: 30px 20px;
