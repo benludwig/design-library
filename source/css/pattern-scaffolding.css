@@ -77,15 +77,11 @@ body {
     padding: 14px;
     }
 
-
-
-
-
-#molecules-primary-nav > div.sg-pattern-example .primary-nav-inside {
+#molecules-primary-nav > div.sg-pattern-example .primary-nav {
     padding: 30px 20px;
     }
 
-#molecules-footer > div.sg-pattern-example .footer-inside {
+#molecules-footer > div.sg-pattern-example .footer {
     padding: 40px 30px;
     background-color: #282a2d;
     }
