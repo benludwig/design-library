@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "timestamp": 1505168799298,
+  "timestamp": 1505331687111,
   "graph": {
     "options": {
       "directed": true,
@@ -46,12 +46,6 @@
           "compileState": "clean",
           "lineagePath": "../../patterns/01-molecules-primary-nav-primary-nav/01-molecules-primary-nav-primary-nav.rendered.html",
           "lineagePattern": "molecules-primary-nav"
-        }
-      },
-      {
-        "v": "00-atoms/links/link-image.mustache",
-        "value": {
-          "compileState": "clean"
         }
       },
       {
