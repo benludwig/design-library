@@ -1,0 +1,280 @@
+
+@import "abstracts/variables";
+
+
+/*Resets-------------------------------
+-------------------------------------*/
+
+body, h1, h2, h3, h4, h5, h6,
+p, blockquote, pre, hr,
+dl, dd, ol, ul, figure {
+    margin: 0;
+    padding: 0;
+    }
+
+/*Typography---------------------------
+-------------------------------------*/
+
+body {
+    @include font-standard;
+    background-color: $color-dark;
+    color: $color-light;
+    }
+
+h1 {
+    @include h1;
+    padding-bottom: 20px;
+    }
+
+h2 {
+    @include h2;
+    padding-bottom: 20px;
+    }
+
+p {
+    padding-bottom: 15px;
+    }
+
+/*Lists---------------------------------
+-------------------------------------*/
+
+ul, menu, dir, dt, dl {
+    display: block;
+    list-style-type: none;
+    -webkit-margin-before: 0em;
+    -webkit-margin-after: 0em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 0px;
+    }
+
+/*Links--------------------------------
+-------------------------------------*/
+
+a {
+  outline: 0;
+  text-decoration: none;
+  color: $color-light;
+  }
+
+/* Link Header */
+
+a.link-header {
+  padding: 1px 0px 0px 0px;
+  margin-left: 18px;
+  @include transition;
+  border-bottom: 1px solid rgba(255, 255, 255, 0);
+  }
+
+a.link-header:hover,
+a.link-header:active,
+a.link-header:focus,
+a.link-header.active {
+  border-bottom: 1px solid rgba(255, 255, 255, 1);
+  }
+
+/* Link Inline */
+
+a.link-inline {
+  border-bottom: 1px solid $color-light;
+  }
+
+a.link-inline:hover,
+a.link-inline:active,
+a.link-inline:focus {
+  border-bottom: 1px solid inherit;
+  }
+
+/* Link Support */
+
+a.link-support {
+  @include font-standard;
+  @include transition;
+  }
+
+a.link-footer:hover,
+a.link-footer:active,
+a.link-footer:focus {
+  color: $color-white;
+  }
+
+/* Link Credits */
+
+a.link-credits {
+  // border-bottom: 0px solid $color-light;
+  }
+
+a.link-credits:after {
+  display: inline-block;
+  width: 13px;
+  height: 13px;
+  content: url('/assets/images/link.svg');
+  margin-left: 5px;
+  }
+
+a.link-footer:hover,
+a.link-footer:active,
+a.link-footer:focus {
+
+  }
+
+/* Link Cycle */
+
+a.link-cycle {
+  @include flex;
+  @include flex-align-center;
+  padding: 16px;
+  }
+
+a.link-cycle img {
+  width: 20px;
+  }
+
+a.link-footer:hover,
+a.link-footer:active,
+a.link-footer:focus {
+
+  }
+
+a.link-cycle span.prev {
+  padding-left: 4px;
+  }
+
+a.link-cycle span.next {
+  padding-right: 4px;
+  }
+
+/* Link Footer */
+
+a.link-footer {
+  @include transition;
+  }
+
+a.link-footer:hover,
+a.link-footer:active,
+a.link-footer:focus {
+  color: $color-white;
+  }
+
+/*Images-------------------------------
+-------------------------------------*/
+
+img {
+    width: 100%;
+    height: auto;
+    }
+
+/*Highlights---------------------------
+-------------------------------------*/
+
+::selection {
+    background: $color-highlight;
+    color: $color-dark;
+    }
+
+::-moz-selection {
+    background: $color-highlight;
+    color: $color-dark;
+    }
+
+/*Primary Nav--------------------------
+-------------------------------------*/
+
+.primary-nav {
+    @include flex;
+    @include flex-justify-space-between;
+    @include flex-align-center;
+    height: 60px;
+    background-color: $color-darker;
+    }
+
+.primary-nav-half,
+.primary-nav .logo-icon {
+    @include flex;
+    @include flex-align-center;
+    }
+
+.primary-nav-half.first {
+    @include flex-justify-flex-start;
+    }
+
+.primary-nav-half.second {
+    @include flex-justify-flex-end;
+    }
+
+.primary-nav .logo img {
+    max-width: 15px;
+    }
+
+.logo span.name,
+.logo span.title {
+  display: none;
+  }
+
+@media (min-width:350px) {
+
+.logo .logo-icon,
+.logo span.title {
+  display: none;
+  }
+
+.logo span.name {
+  display: block;
+  }
+
+  }
+
+@media (min-width:550px) {
+
+.logo .logo-icon {
+  display: none;
+  }
+
+.logo span.name,
+.logo span.title {
+  display: inline-block;
+  }
+
+  }
+
+/*Footer-------------------------------
+-------------------------------------*/
+
+.footer {
+  @include flex;
+  @include flex-justify-space-between;
+  @include flex-wrap;
+  background-color: $color-darker;
+  }
+
+.footer-right {
+  padding: 50px 0px 0px 0px;
+  }
+
+.footer dl {
+  @include flex;
+  @include flex-wrap;
+  }
+
+.footer dt,
+.footer dd {
+  padding: 5px 10px;
+  }
+
+.footer dt {
+  width: 100%;
+  @include font-detail;
+  color: $color-light;
+  padding-bottom: 10px;
+  }
+
+@media (min-width:540px) {
+
+  .footer {
+    @include flex-no-wrap;
+    }
+
+  .footer-right {
+    padding: 0px 0px 0px 100px;
+    }
+}

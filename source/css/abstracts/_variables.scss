@@ -1,0 +1,190 @@
+/*Colors-------------------------------
+-------------------------------------*/
+
+$color-darker: #1a1a1a;
+$color-dark: #282a2d;
+$color-light: #d3d0cd;
+$color-neutral: #968d81;
+$color-warm: #ea6922;
+$color-hot: #e84950;
+$color-white: #ffffff;
+$color-highlight: #fcf113;
+$color-support: #9e9e9e;
+
+/*Font Files---------------------------
+-------------------------------------*/
+
+
+@font-face {
+  font-family: 'Butler';
+  src: url('../fonts/Butler/butler_medium_stencil-webfont.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/Butler/butler_medium_stencil-webfont.woff') format('woff'); /* Pretty Modern Browsers */
+       }
+
+@font-face {
+ font-family: 'CircularBold';
+ src: url('../fonts/Circular/lineto-circular-bold.eot'), /* IE9 Compat Modes */
+      url('../fonts/Circular/lineto-circular-bold.woff2') format('woff2'), /* Super Modern Browsers */
+      url('../fonts/Circular/lineto-circular-bold.woff') format('woff'); /* Pretty Modern Browsers */
+      }
+
+@font-face {
+font-family: 'GTAmericaRegular';
+src: url('../fonts/GTAmerica/GTAmerica-Regular.eot'), /* IE9 Compat Modes */
+     url('../fonts/GTAmerica/GTAmerica-Regular.woff2') format('woff2'), /* Super Modern Browsers */
+     url('../fonts/GTAmerica/GTAmerica-Regular.woff') format('woff'), /* Pretty Modern Browsers */
+     url('../fonts/GTAmerica/GTAmerica-Regular.ttf')  format('truetype'), /* Safari, Android, iOS */
+     url('../fonts/GTAmerica/GTAmerica-Regular.svg') format('svg'); /* Legacy iOS */
+     }
+
+ /*Typography---------------------------
+ -------------------------------------*/
+
+$font-standard : 'GTAmericaRegular', sans-serif;
+$font-headline : 'Butler', serif;
+$font-detail : 'CircularBold', sans-serif;
+
+@mixin font-smoothing {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-weight: normal;
+  font-style: normal;
+  }
+
+html {
+  font-size: 100%;
+  }
+
+@media (min-width:1300px) {
+
+  html {
+    font-size: 120%;
+    }
+
+}
+
+@media (min-width:1600px) {
+
+  html {
+    font-size: 140%;
+    }
+
+}
+
+@mixin font-standard {
+  font-family: $font-standard;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.375rem;
+  letter-spacing: 0px;
+  margin: 0;
+  @include font-smoothing;
+  }
+
+@mixin font-standard-support {
+  font-family: $font-standard;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.375rem;
+  letter-spacing: 0px;
+  margin: 0;
+  color: $color-support;
+  @include font-smoothing;
+  }
+
+@mixin h1 {
+  font-family: $font-headline;
+  font-size: 2.5rem;
+  line-height: 2.5rem;
+  padding-bottom: 0.9375rem;
+  @include font-smoothing;
+  }
+
+@mixin h2 {
+  font-family: $font-headline;
+  font-size: 1.875rem;
+  line-height: 1.875rem;
+  @include font-smoothing;
+  }
+
+@mixin font-detail {
+  font-family: $font-detail;
+  font-size: 0.6875rem;
+  line-height: 0.6875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.75px;
+  @include font-smoothing;
+  }
+
+/*Flexbox------------------------------
+-------------------------------------*/
+
+@mixin flex {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    }
+
+@mixin flex-wrap {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    }
+
+@mixin flex-no-wrap {
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    }
+
+@mixin flex-direction-column {
+    -ms-flex-direction: column;
+    flex-direction: column;
+    }
+
+@mixin flex-justify-space-between {
+    -webkit-justify-content: space-between;
+    -ms-flex-pack:justify;
+    justify-content: space-between;
+    }
+
+@mixin flex-justify-flex-start {
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    }
+
+@mixin flex-justify-center {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    }
+
+@mixin flex-justify-flex-end {
+    -webkit-justify-content: flex-end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    }
+
+ @mixin flex-align-center {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    }
+
+@mixin flex-align-start {
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+   }
+
+@mixin flex-align-end {
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+   }
+
+@mixin transition {
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+    }

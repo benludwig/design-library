@@ -33,7 +33,8 @@ gulp.task('pl-copy:favicon', function(){
 // Fonts copy
 gulp.task('pl-copy:font', function(){
   return gulp.src('*', {cwd: path.resolve(paths().source.fonts)})
-    .pipe(gulp.dest(path.resolve(paths().public.fonts)));
+    .pipe(gulp.dest(path.resolve(paths().public.fonts)))
+    .pipe(gulp.dest('./../fonts/'));
 });
 
 // SASS Compilation
@@ -41,6 +42,16 @@ gulp.task('pl-sass', function(){
   return gulp.src(path.resolve(paths().source.css, '**/*.scss'))
     .pipe(sass().on('error', sass.logError))
     .pipe(gulp.dest(path.resolve(paths().source.css)));
+});
+
+gulp.task('copysass', function () {
+  return gulp.src('source/css/*.scss') // Get source files with gulp.src
+    .pipe(gulp.dest('./../_sass/')) // Outputs the file in the destination folder
+});
+
+gulp.task('copyvariables', function () {
+  return gulp.src('source/css/abstracts/*.scss') // Get source files with gulp.src
+    .pipe(gulp.dest('./../_sass/abstracts/')) // Outputs the file in the destination folder
 });
 
 // CSS Copy
